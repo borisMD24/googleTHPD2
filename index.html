@@ -113,22 +113,12 @@
       let container = document.getElementById("input-container");
       let searches = document.getElementById("searches");
       let blur = function(e){
-        container.classList.remove("active");
-        container.style.borderBottom = "solid rgba(194, 194, 194,0.8) 1px";
-        container.style.webkitBorderBottomLeftRadius = "2.2em";
-        container.style.webkitBorderBottomRightRadius = "2.2em";
-        container.style.webkitBorderTopLeftRadius = "2.2em";
-        container.style.webkitBorderTopRightRadius = "2.2em";
+        container.classList.remove("active-input");
         searches.style.display = "none";
         input.removeEventListener("blur", blur);
       }
       let focus = function(e){
-        container.style.borderBottom = "none";
-        container.classList.add("active");
-        container.style.webkitBorderBottomLeftRadius = "0px";
-        container.style.webkitBorderBottomRightRadius = "0px";
-        container.style.webkitBorderTopLeftRadius = "1.1em";
-        container.style.webkitBorderTopRightRadius = "1.1em";
+        container.classList.add("active-input");
         searches.style.display = "block";
         searches.style.top = container.getBoundingClientRect().bottom + "px";
         searches.style.left = container.getBoundingClientRect().left + 1  + "px";
