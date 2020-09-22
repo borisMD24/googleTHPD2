@@ -93,6 +93,10 @@ html, body{
   border: solid rgba(194, 194, 194,0.8) 1px;
 }
 
+.search-container .active-input{
+  border-radius: 1.1em 1.1em 0px 0px;
+  border-bottom: none;
+}
 .search-container .input:hover{
   box-shadow:
 0 0px 0.3px rgba(0, 0, 0, 0.034),
